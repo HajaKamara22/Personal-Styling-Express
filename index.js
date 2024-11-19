@@ -26,8 +26,8 @@ let small = "2";
 HEIGHT_CONVERSION;
 
 const pool = new Pool({
-  user: "hajakamara",
-  host: "localhost",
+  user: "personalstyling_owner",
+  host: "postgresql://personalstyling_owner:aiYkNjBE5W7H@ep-late-sun-a5d44wlu-pooler.us-east-2.aws.neon.tech/personalstyling?sslmode=require",
   database: "personalstyling",
   password: "password",
   port: 5432,
