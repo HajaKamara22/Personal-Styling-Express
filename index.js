@@ -27,15 +27,18 @@ HEIGHT_CONVERSION;
 
 const pool = new Pool({
   user: "personalstyling_owner",
-  host: "postgresql://personalstyling_owner:aiYkNjBE5W7H@ep-late-sun-a5d44wlu-pooler.us-east-2.aws.neon.tech/personalstyling?sslmode=require",
+  host: "@ep-late-sun-a5d44wlu-pooler.us-east-2.aws.neon.tech",
   database: "personalstyling",
-  password: "password",
+  password: "aiYkNjBE5W7H",
   port: 5432,
+  ssl: {
+    require: true,
+  }
 });
 
 const corsOptions = {
   //import
-  origin: "*",
+  origin: "http://personal-styling-vue.vercel.app",
   credential: true,
   optionSuccessStatus: 200,
 };
