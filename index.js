@@ -111,7 +111,7 @@ app.get("/secret", validateToken, (req, res) => {
   res.send("A secret route");
 });
 
-app.post("/personalizequiz", validateToken, (req, res) => {
+app.post("/personalizequiz", (req, res) => {
   //updating the customers table in the database based on the user's selection
   let height = Number(req.body.height);
   let bust = Number(req.body.bust);
