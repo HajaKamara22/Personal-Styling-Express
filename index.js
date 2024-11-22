@@ -38,7 +38,7 @@ const pool = new Pool({
 
 const corsOptions = {
   //import
-  origin: "http://personal-styling-vue.vercel.app",
+  origin: "https://personal-styling-vue.vercel.app",
   credential: true,
   optionSuccessStatus: 200,
 };
