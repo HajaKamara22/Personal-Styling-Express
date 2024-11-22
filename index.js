@@ -95,7 +95,7 @@ app.post("/login", (req, res) => {
         const token = jwt.sign(
           { userID: results.rows[0].id },
           process.env.JWT_SECRET,
-          { expiresIn: "30d" }
+          { expiresIn: "10years" }
         );
         res.send(token);
       } else {
