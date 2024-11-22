@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken')
+import jwt from 'jsonwebtoken'
 // to access decode method
 
 function validateToken(req, res, next) {
@@ -20,4 +20,4 @@ function validateToken(req, res, next) {
 
 }
 
-module.exports = validateToken //exporting the function out of this file so it can be used in index.js
+export default validateToken //exporting the function out of this file so it can be used in index.js
